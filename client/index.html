@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app>
   <head>
-    <title>Chat Example</title>
+    <title>Assignment 1(Prepared by: 7780497,7804396)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
@@ -9,12 +9,55 @@
       body {
         padding-top: 60px;
       }
+     
+    .mainDiv{
+      position:absolute;
+      z-index:0;
+      left:0;
+      top:0;
+      right:0;
+      border-style: solid;
+      width: auto;
+      height: auto;
+    }
+    #divUpload{
+      float: left;
+      width: auto;
+    }
+    #divChat{
+      float: right;
+      width: auto;
+    }
+    #divHeading{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -80px;
+      text-align: center;
+      width: auto;
+      height: 95px;
+      border-bottom: 2px solid #a6a6a6;
+    }
+    .txtHead{
+      font-style: oblique;
+      font-size: 80px;
+    }
+   .bodyDiv{
+     width: auto;
+     height: auto;
+   }
     </style>
-    </head>
-    <body>
-   <p>
-     Hello World
-   </p>
+   
+  <div class=mainDiv> 
+    <div id=divUpload></div> 
+    <div id=divHeading>
+      <p class=txtHead>Instagram</p>
+    </div>
+    <div id=divChat></div>
+    <div class=bodyDiv>
+      <img src="img/img1.jpg" alt="firstImage" style="margin-top:50px;margin-bottom:50px;margin-left:250px;" >
+    </div>
+  </div>
+  <body>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
   </body>
